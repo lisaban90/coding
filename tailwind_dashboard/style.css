@@ -1,0 +1,1632 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.whole-screen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.top-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem;
+}
+
+.stacked-preview{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.stacked{
+    font-weight: 500;
+}
+
+.preview{
+    background-color: rgb(238, 236, 236);
+    border-radius: 0.5rem ;
+    padding: 0.2rem 0.5rem;
+}
+
+.preview p{
+    font-size: small;
+}
+
+.get-code-arrow{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    column-gap: 1rem;
+}
+
+.get-code-text p{
+    color: rgb(33, 90, 235);
+    font-size: small;
+}
+
+.arrow{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.arrow i{
+    color: rgb(33, 90, 235);
+    font-size: small;
+}
+
+.body-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 1rem;
+    padding: 1rem 2rem 2rem 1rem;
+}
+
+.menuitems-logo-user-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-items{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    
+    
+}
+
+.home p{
+    font-size: small;
+    font-size: 500;
+}
+
+.invoices p{
+    font-size: small;
+    font-size: 500;
+}
+
+.clients p{
+    font-size: small;
+    font-size: 500;
+}
+
+.expenses p{
+    font-size: small;
+    font-size: 500;
+}
+
+.user-bellicon-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0.5rem 3rem;
+    
+    
+}
+
+.bell-icon-container{
+    width: fit-content;
+    height: auto;
+    color: rgb(181, 183, 184);
+}
+
+.user-container{
+    width: 35px;
+    height: 35px;
+    border-radius: 2.5rem;
+}
+
+.user-container img{
+    width: 35px;
+    height: 35px;
+    border-radius: 2.5rem;
+}
+
+.view-last-days-invoice-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.left-side{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.cashflow-container{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 2rem;
+    border-right: 1px solid rgb(214, 213, 213);
+}
+
+.cashflow-container h4{
+    font-size: 0.9rem;
+}
+
+.last-days-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.Last-7-days-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+    color: rgb(73, 14, 210);
+    
+}
+
+.Last-7-days-container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.last-30-days-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+}
+
+.last-30-days-container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.All-time-container{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+}
+
+.All-time-container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.new-invoice-button-container{
+    width: fit-content;
+    height: auto;
+}
+
+.new-invoice-button-container button{
+    cursor: pointer;
+    background-color: rgb(58, 83, 230);
+    outline: none;
+    border: none;
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-invoice-button-container i{
+    font-size: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.numbers-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(214, 213, 213);
+    border-top: 1px solid rgb(214, 213, 213); ;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    
+}
+
+.first-number-container{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 1rem 2rem 1rem;
+    row-gap: 0.5rem;
+    border-right: 1px solid rgb(214, 213, 213);
+}
+
+.revenue-small-number{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.revenue-container{
+    width: fit-content;
+    height: auto;
+}
+
+.revenue-container p{
+    font-size: 0.8rem;
+    color: rgb(111, 112, 112);
+}
+
+.small-number-container{
+    width: fit-content;
+    height: auto;
+}
+
+.small-number-revenue-container p{
+    font-size: 0.8rem;
+    
+}
+
+.small-number-container p{
+    font-size: 0.8rem;
+    color: red;
+}
+
+.big-number{
+    width: fit-content;
+    height: auto;
+}
+
+.big-number h2{
+    font-weight: 600;
+}
+
+.second-number-container{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 1rem 2rem 1rem;
+    row-gap: 0.5rem;
+    border-right: 1px solid rgb(214, 213, 213);
+}
+
+.third-number-container{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 1rem 2rem 1rem;
+    row-gap: 0.5rem;
+    border-right: 1px solid rgb(214, 213, 213);
+}
+
+.fourth-number-container{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem 1rem 2rem 1rem;
+    row-gap: 0.5rem;
+    border-right: 1px solid rgb(214, 213, 213);
+}
+
+.recent-activity-main-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.recent-activity-heading-container{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-bottom: 1px solid rgb(214, 213, 213);
+    
+}
+
+.recent-activity-heading-container h4{
+    font-size: 0.9rem;
+}
+
+.today-heading-full-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.today-heading-only-container{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0 0.5rem 2rem;
+    border-bottom: 1px solid rgb(214, 213, 213);
+    background-color: rgb(239, 238, 238);
+}
+
+.today-heading-only-container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.transactions-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.first-transaction-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem;
+    border-bottom: 1px solid rgb(214, 213, 213);
+}
+
+.amounts-status-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: top;
+    column-gap: 1rem;
+    
+}
+
+.up-arrow{
+    width: fit-content;
+    height: auto;
+}
+
+.up-arrow i{
+    color: rgb(179, 177, 177);
+}
+
+.amount-two-lines{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.first-line-amount{
+    width: fit-content;
+    height: auto;
+}
+
+.first-line-amount p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.second-line-amount{
+    width: fit-content;
+    height: auto;
+}
+
+.second-line-amount p{
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88);
+    
+}
+
+.status-paid{
+    width: fit-content;
+    height: auto;
+}
+
+.status-paid button{
+    background-color: rgb(207, 250, 218);
+    outline: none;
+    border: none;
+    font-size: small;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.2rem;
+    color:  rgb(48, 113, 64);
+    border: 1px solid rgb(132, 240, 159);
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.company-use{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    
+}
+
+.reform{
+    width: fit-content;
+    height: auto;
+}
+
+.reform p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.purpose-of-transaction{
+    width: fit-content;
+    height: auto;
+}
+
+.purpose-of-transaction p{
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88);
+    
+}
+
+.view-transaction-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.first-line-view-transaction{
+    width: fit-content;
+    height: auto;
+}
+
+.first-line-view-transaction p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(73, 14, 210);
+}
+
+.second-line-invoice{
+    width: fit-content;
+    height: auto;
+}
+
+.second-line-invoice p{
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88);
+    
+}
+
+.second-transaction-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem;
+    border-bottom: 1px solid rgb(214, 213, 213);
+}
+
+.third-transaction-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem;
+    border-bottom: 1px solid rgb(214, 213, 213);
+}
+
+.status-withdraw{
+    width: fit-content;
+    height: auto;
+}
+
+.status-withdraw button{
+    background-color: rgb(227, 229, 227);
+    outline: none;
+    border: none;
+    font-size: small;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.2rem;
+    color:  rgb(87, 88, 87);
+    border: 1px solid rgb(185, 187, 186);
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.status-overdue{
+    width: fit-content;
+    height: auto;
+}
+
+.status-overdue button{
+    background-color: rgb(250, 209, 207);
+    outline: none;
+    border: none;
+    font-size: small;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.2rem;
+    color:  rgb(113, 48, 48);
+    border: 1px solid rgb(240, 132, 132);
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.yesterday-heading-full-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.yesterday-heading-only-container{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0 0.5rem 2rem;
+    border-bottom: 1px solid rgb(214, 213, 213);
+    background-color: rgb(239, 238, 238);
+}
+
+.yesterday-heading-only-container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.recent-clients-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.recent-client-heading-viewall{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+.recent-clients{
+    width: fit-content;
+    height: auto;
+}
+
+.recent-clients h4{
+    font-size: 0.9rem;
+}
+
+.view-all{
+    width: fit-content;
+    height: auto;
+}
+
+.view-all p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(73, 14, 210);
+}
+
+.company-invoice-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.companyname-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 1rem;
+    
+}
+
+.companyname-three-dots{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(214, 213, 213);
+    background-color: rgb(245, 244, 244);
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    
+    
+}
+
+.logo-and-name{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.logo-container{
+    
+    width: 35px;
+    height: 35px;
+
+}
+
+.logo-container img{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 0.5rem;
+}
+
+.logo-name-container{
+    width: fit-content;
+    height: auto;
+}
+
+.logo-name-container p{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.three-dots-icon{
+    width: fit-content;
+    height: auto;
+}
+
+.three-dots-icon i{
+    color: rgb(172, 172, 172);
+}
+
+.lastinvoice-date{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-left: 1px solid rgb(214, 213, 213);
+    border-right: 1px solid rgb(214, 213, 213);
+    
+}
+
+.last-invoice{
+    width: fit-content;
+    height: auto;
+}
+
+.last-invoice p{
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88) ;
+}
+
+.date{
+    width: fit-content;
+    height: auto;
+}
+
+.date p{
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88) ;
+}
+
+.amount-dollar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.amount-label-container{
+    width: fit-content;
+    height: auto;
+}
+
+.amount-label-container p{
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88);
+}
+
+.amount-status-2nd-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.amount-container{
+    width: fit-content;
+    height: auto;
+}
+
+.amount-container p{
+    font-size: 0.8rem;
+}
+
+.hamburger-logo-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.hamburger-icon{
+    width: fit-content;
+    height: auto;
+    display: none;
+    
+}
+
+.mobile-menu{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 20;
+    left: 0;
+    background-color: aqua;
+    padding: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+    list-style: none;
+    font-weight: 500;
+}
+
+.first-line-view-transaction-mobile p{
+    display: none;
+}
+
+.cancel-logo{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+/*background-color: rgb(214, 213, 213)
+    border: 1px solid rgb(214, 213, 213); 
+
+
+@media screen and (max-width: 480px)*/
+
+@media screen and (max-width: 1120px){
+    .numbers-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 1px solid rgb(214, 213, 213);
+        border-top: 1px solid rgb(214, 213, 213); 
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .first-number-container{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-left: 1px solid rgb(214, 213, 213);
+    
+    }
+
+    .second-number-container{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-bottom: 1px solid rgb(214, 213, 213);
+    }
+
+    .third-number-container{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-left: 1px solid rgb(214, 213, 213);
+        border-top: 1px solid rgb(214, 213, 213);
+    }
+    
+    .fourth-number-container{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        
+        
+    }
+
+    .recent-clients-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+    
+
+    .company-invoice-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+       
+        
+    }
+
+    .companyname-container{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        
+    }
+
+    .hamburger-logo-container{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    
+    .hamburger-icon{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        
+        
+    }
+
+    .menu-items{
+        width: fit-content;
+        height: auto;
+        display: none;
+    }
+
+    .mobile-menu{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        padding: 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1.5rem;
+        list-style: none;
+        font-weight: 500;
+    }
+
+    .amounts-status-container{
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: top;
+        column-gap: 1rem;
+        min-width: 200px;
+        
+    }
+
+    .first-line-amount{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .first-line-amount p{
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .second-line-amount{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .second-line-amount p{
+        font-size: 0.6rem;
+        color: rgb(88, 88, 88);
+        
+    }
+    
+    .status-paid{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .status-paid button{
+        background-color: rgb(207, 250, 218);
+        outline: none;
+        border: none;
+        font-size: small;
+        padding: 0.2rem 0.3rem;
+        border-radius: 0.2rem;
+        color:  rgb(48, 113, 64);
+        border: 1px solid rgb(132, 240, 159);
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+
+    .status-withdraw{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .status-withdraw button{
+        background-color: rgb(227, 229, 227);
+        outline: none;
+        border: none;
+        font-size: small;
+        padding: 0.2rem 0.3rem;
+        border-radius: 0.2rem;
+        color:  rgb(87, 88, 87);
+        border: 1px solid rgb(185, 187, 186);
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+    
+    .status-overdue{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .status-overdue button{
+        background-color: rgb(250, 209, 207);
+        outline: none;
+        border: none;
+        font-size: small;
+        padding: 0.2rem 0.3rem;
+        border-radius: 0.2rem;
+        color:  rgb(113, 48, 48);
+        border: 1px solid rgb(240, 132, 132);
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+
+    .view-transaction-container{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        row-gap: 0.5rem;
+        text-wrap: nowrap;
+    }
+
+    .first-line-view-transaction{
+        width: fit-content;
+        height: auto;
+        
+    }
+    
+    .first-line-view-transaction p{
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: rgb(73, 14, 210);
+    }
+
+    .second-line-invoice{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .second-line-invoice p{
+        font-size: 0.6rem;
+        color: rgb(88, 88, 88);
+        
+    }
+
+    .reform{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .reform p{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    
+    .purpose-of-transaction{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .purpose-of-transaction p{
+        font-size: 0.6rem;
+        color: rgb(88, 88, 88);
+        
+    }
+
+    .big-number{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .big-number h2{
+        font-weight: 600;
+        font-size: larger;
+    }
+
+    .view-last-days-invoice-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        padding: 1rem 1rem 1rem 1rem;
+        column-gap: 1rem;
+        
+        /*align-items: flex-start; flex-wrap: wrap;*/
+    }
+
+    .left-side{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    
+    .cashflow-container{
+        width: fit-content;
+        height: auto;
+        padding: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+    }
+    
+    .cashflow-container h4{
+        font-size: 0.8rem;
+    }
+    
+    .last-days-container{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    
+    .Last-7-days-container{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+        color: rgb(73, 14, 210);
+        
+    }
+    
+    .Last-7-days-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+    
+    .last-30-days-container{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .last-30-days-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+    
+    .All-time-container{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .All-time-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+    
+    .new-invoice-button-container{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .new-invoice-button-container button{
+        cursor: pointer;
+        background-color: rgb(58, 83, 230);
+        outline: none;
+        border: none;
+        color: rgb(253, 253, 253);
+        font-weight: 600;
+        padding: 0.3rem 0.4rem;
+        border-radius: 0.3rem;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-wrap: nowrap;
+    }
+    
+    .new-invoice-button-container i{
+        font-size: 0.5rem;
+        padding-right: 0.5rem;
+    
+    }
+
+    
+/*min-width: 100px;*/
+
+@media screen and (max-width: 512px){
+    .numbers-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 1px solid rgb(214, 213, 213);
+        border-top: 1px solid rgb(214, 213, 213); 
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .first-number-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-left: 1px solid rgb(214, 213, 213);
+    
+    }
+
+    .second-number-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-top: 1px solid rgb(214, 213, 213);
+        border-left: 1px solid rgb(214, 213, 213);
+    }
+
+    .third-number-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-left: 1px solid rgb(214, 213, 213);
+        border-bottom: 1px solid rgb(214, 213, 213);
+    }
+    
+    .fourth-number-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem 1rem 2rem 1rem;
+        row-gap: 0.5rem;
+        border-right: 1px solid rgb(214, 213, 213);
+        border-left: 1px solid rgb(214, 213, 213);
+        
+        
+    }
+
+    .company-use{
+        display: none;
+    }
+
+    .recent-activity-heading-container h4{
+        font-size: 0.7rem;
+    }
+
+    .today-heading-only-container p{
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+
+    .up-arrow i{
+        display: none;
+    }
+
+    .first-line-amount{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .first-line-amount p{
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .second-line-amount{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .second-line-amount p{
+        font-size: 0.6rem;
+        color: rgb(88, 88, 88);
+        
+    }
+    
+    .status-paid{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .status-paid button{
+        background-color: rgb(207, 250, 218);
+        outline: none;
+        border: none;
+        font-size: small;
+        padding: 0.2rem 0.3rem;
+        border-radius: 0.2rem;
+        color:  rgb(48, 113, 64);
+        border: 1px solid rgb(132, 240, 159);
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+
+    .status-withdraw{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .status-withdraw button{
+        background-color: rgb(227, 229, 227);
+        outline: none;
+        border: none;
+        font-size: small;
+        padding: 0.2rem 0.3rem;
+        border-radius: 0.2rem;
+        color:  rgb(87, 88, 87);
+        border: 1px solid rgb(185, 187, 186);
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+    
+    .status-overdue{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .status-overdue button{
+        background-color: rgb(250, 209, 207);
+        outline: none;
+        border: none;
+        font-size: small;
+        padding: 0.2rem 0.3rem;
+        border-radius: 0.2rem;
+        color:  rgb(113, 48, 48);
+        border: 1px solid rgb(240, 132, 132);
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+
+    .view-transaction-container{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        row-gap: 0.5rem;
+    }
+
+    .first-line-view-transaction-mobile p{
+        display: block;
+        font-size: 0.7rem;
+        color: rgb(73, 14, 210);
+        
+
+    }
+
+    .first-line-view-transaction p{
+        display: none;
+    }
+
+    .second-line-invoice{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .second-line-invoice p{
+        font-size: 0.6rem;
+        color: rgb(88, 88, 88);
+        
+    }
+
+    .left-side{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /*align-items: center;*/
+        column-gap: 2rem;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .cashflow-container{
+        width: fit-content;
+        height: auto;
+        padding: 0.5rem;
+        border: none;
+
+    }
+    
+    .cashflow-container h4{
+        font-size: 0.8rem;
+    }
+    
+    .last-days-container{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+        padding: 0.5rem;
+        /*flex: 1 1 100%;*/
+    }
+    
+    .Last-7-days-container{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+        
+        
+    }
+    
+    .Last-7-days-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: rgb(73, 14, 210);
+        text-wrap: nowrap;
+    }
+    
+    .last-30-days-container{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .last-30-days-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+    
+    .All-time-container{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .All-time-container p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+    
+    .new-invoice-button-container{
+        width: fit-content;
+        height: auto;
+        flex: 0 0 auto;
+        text-wrap: nowrap;
+    }
+    
+    .new-invoice-button-container button{
+        cursor: pointer;
+        background-color: rgb(58, 83, 230);
+        outline: none;
+        border: none;
+        color: rgb(253, 253, 253);
+        font-weight: 600;
+        padding: 0.3rem 0.4rem;
+        border-radius: 0.3rem;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        text-wrap: nowrap;
+    }
+    
+    .new-invoice-button-container i{
+        font-size: 0.5rem;
+        padding-right: 0.5rem;
+        text-wrap: nowrap;
+    
+    }
+    
+
+    
+}
+
+
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.main_container{
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-image: url('dialekt_images/tiles.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+     
+    /*
+    background-color: rgb(219, 204, 247);
+    padding: 2rem 2rem;
+    margin: 1rem 1rem;
+    border-radius: 1rem;
+    row-gap: 0.5rem;*/  
+}
+
+.dialekt_logo{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    
+    
+}
+
+.dialekt_logo img{
+    width: 20px;
+    height: 20px;
+    transform: translate(50%, 200%);
+    
+    
+}
+
+@media screen and (max-width: 480px){
+    .dialekt_logo img{
+        width: 150px;
+        height: auto;
+        top: 50%;
+        left: 50%;
+    }
+}

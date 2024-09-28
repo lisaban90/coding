@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;,i
+    padding: 10rem 0 10rem 0;
+    line-height: 2.5rem;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.logo-container{
+    width: 50px;
+    height: 50px;
+}
+
+.sign-in-heading{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
+
+.Email-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-content: start;
+}
+
+.Email-container label{
+    font-size: 0.8rem;
+}
+
+.Password-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-content: start;
+}
+
+.Password-container label{
+    font-size: 0.8rem;
+}
+
+.Password_forgotpassword{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      
+}
+
+.Password_forgotpassword a{
+    font-size: 0.8rem;
+}
+
+.Button{
+    width: 30%;
+    height: auto;
+}
+
+.Button button{
+    width: fit-content;
+    background-color: #9953ce;
+    color: #f8f8f8;
+    font-size: 0.9rem;
+    padding: 0.2rem 9.8rem 0.2rem 9.8rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.member_text_trial_container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.member_text p{
+    font-size: 0.8rem;
+}
+
+.trial a{
+    font-size: 0.8rem;
+    font-weight: bold;
+}

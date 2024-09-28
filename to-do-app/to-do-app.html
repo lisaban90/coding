@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-APP</title>
+    <link rel="stylesheet" href="./to-do-app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="first_section">
+        <div class="welcome-heading">
+            <h1>Welcome</h1>
+        </div>
+        <div class="add-new-task">
+            <button id="button" type="button">Add New Task</button>
+        </div>
+
+    </div>
+    <div class="lists_section" id="lists_section">
+        <div class="new-task-container" id="new-task-container">
+            
+            <div class="task-name-status">
+                <div class="complete-status">
+                    <i class="fa-regular fa-circle" id="incomplete"></i>
+                    <i class="fa-solid fa-circle-check" id="complete"></i>
+                </div>
+                <div class="task-name">
+                    <h4>testing</h4>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="edit-icon">
+                    <i class="fa-solid fa-pen-to-square" id="edit-icon"></i>
+                </div>
+                <div class="delete-icon">
+                    <i class="fa-solid fa-trash" id="delete-icon"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="modal_overlay" id="modal_overlay">
+        <div class="cancel_and_form">
+            <div class="close-icon-container" id="close-icon-container">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="modal-form">
+                <form id="form">
+                    <div class="input-group" id="input-group">
+                        <input type="text" name="task" id="taskname" placeholder="Enter New Task">
+                        <p class="task-input-alert" id="task-input-alert"></p>
+                    </div>
+                    <div class="add-list-button-container">
+                        <button type="Submit" id="addtask" class="addtask">Add task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <script src="./to-do-app.js"></script>
+</body>
+</html>

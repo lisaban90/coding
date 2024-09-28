@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="break-assignment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-menu-dashboard-container">   
+            <div class="task-trek-label-icon-container">
+                <div class="icon-container">
+                    <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="12.5854" y="13.2621" width="29.5491" height="29.6723" rx="5.36585" fill="#B884CC"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.49229 1.49158C3.30698 1.49158 2.34595 2.45248 2.34595 3.63792V9.7742C2.34595 10.9596 3.30698 11.9205 4.49229 11.9205H5.11272V8.53229C5.11272 6.16155 7.03452 4.23961 9.4054 4.23961H12.5853V3.63792C12.5853 2.45248 11.6243 1.49158 10.439 1.49158H4.49229Z" fill="#F8CD63"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.68729 5.61548C7.90932 5.61548 6.46777 7.0569 6.46777 8.83499V20.1473C6.46777 21.9254 7.90932 23.3668 9.68729 23.3668H10.1547V18.3691C10.1547 14.2202 13.5181 10.8569 17.6669 10.8569H24.7478V8.83499C24.7478 7.0569 23.3063 5.61548 21.5283 5.61548H9.68729Z" fill="#65B583"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.6483 29.0653L34.3802 28.9202C34.7949 28.9112 35.1239 28.5679 35.1151 28.1531C35.1062 27.7383 34.7627 27.4091 34.3478 27.4181L27.9671 27.5557C27.7626 27.1171 27.3177 26.8132 26.8019 26.8132C26.6975 26.8132 26.5961 26.8256 26.499 26.849L17.9581 17.8618C17.7132 17.604 17.3056 17.5936 17.0478 17.8386C16.79 18.0836 16.7796 18.4911 17.0246 18.7489L25.5678 27.7385C25.5345 27.8527 25.5167 27.9734 25.5167 28.0983C25.5167 28.278 25.5536 28.4491 25.6202 28.6044L20.5705 34.2485C20.3729 34.4694 20.3917 34.8086 20.6126 35.0062C20.8335 35.2038 21.1727 35.1849 21.3703 34.9641L26.4159 29.3245C26.5377 29.3628 26.6674 29.3834 26.8019 29.3834C27.1261 29.3834 27.4222 29.2634 27.6483 29.0653Z" fill="white"/>
+                        </svg>
+                </div>
+                <div class="label-container">
+                    <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M96.8903 7.02908H99.988L94.891 11.8546L100.371 17.1614H97.2235L92.7682 12.8049V17.1614H90.1272V0.179565H92.7682V10.892L96.8903 7.02908Z" fill="white"/>
+                        <path d="M78.6516 12.7185C78.668 13.2533 78.7955 13.7346 79.0341 14.1624C79.2727 14.5903 79.6224 14.9276 80.0832 15.1744C80.5521 15.413 81.1239 15.5323 81.7986 15.5323C82.3828 15.5323 82.8847 15.4542 83.3043 15.2979C83.7321 15.1333 84.0859 14.94 84.3656 14.7178C84.6454 14.4874 84.8511 14.2735 84.9827 14.0761L86.1552 15.6681C85.9001 16.0137 85.5792 16.3222 85.1925 16.5937C84.8058 16.8652 84.3245 17.075 83.7486 17.2231C83.1809 17.3795 82.4774 17.4576 81.6382 17.4576C80.5357 17.4576 79.5772 17.2314 78.7626 16.7788C77.9481 16.3263 77.3146 15.6887 76.862 14.8659C76.4177 14.0431 76.1956 13.0805 76.1956 11.978C76.1956 10.9907 76.4013 10.1021 76.8127 9.31225C77.2241 8.51417 77.8205 7.88475 78.6022 7.42401C79.392 6.96326 80.3382 6.73288 81.4407 6.73288C82.4692 6.73288 83.3619 6.93857 84.1188 7.34996C84.8758 7.76134 85.4599 8.35373 85.8713 9.12713C86.2909 9.8923 86.5007 10.8179 86.5007 11.904C86.5007 11.9698 86.4966 12.1055 86.4884 12.3112C86.4884 12.5169 86.4801 12.6527 86.4637 12.7185H78.6516ZM84.0324 10.7932C84.0242 10.5299 83.9337 10.2296 83.7609 9.8923C83.5964 9.55497 83.329 9.26288 82.9587 9.01606C82.5885 8.761 82.0948 8.63347 81.4777 8.63347C80.8442 8.63347 80.33 8.75688 79.9351 9.00371C79.5401 9.24231 79.2481 9.53028 79.0588 9.86761C78.8696 10.1967 78.7585 10.5053 78.7256 10.7932H84.0324Z" fill="white"/>
+                        <path d="M68.865 17.1614H66.2362V7.02908H68.865V8.71986H68.8032C68.8608 8.51417 69.0172 8.25911 69.2722 7.95469C69.5355 7.64204 69.8975 7.3623 70.3583 7.11547C70.819 6.86041 71.3744 6.73288 72.0244 6.73288C72.4933 6.73288 72.913 6.7987 73.2832 6.93035C73.6534 7.06199 73.9167 7.19363 74.0731 7.32527L73.0117 9.49737C72.9047 9.36573 72.7031 9.2382 72.407 9.11479C72.119 8.98314 71.7611 8.91732 71.3332 8.91732C70.7984 8.91732 70.3459 9.07365 69.9757 9.3863C69.6137 9.69895 69.338 10.0733 69.1488 10.5094C68.9596 10.9454 68.865 11.3527 68.865 11.7312V17.1614Z" fill="white"/>
+                        <path d="M56.4051 3.19088H52.172V0.870688H63.2423V3.19088H59.0091V17.1614H56.4051V3.19088Z" fill="white"/>
+                        <path d="M46.5429 7.02908H49.6406L44.5436 11.8546L50.0232 17.1614H46.8761L42.4209 12.8049V17.1614H39.7798V0.179565H42.4209V10.892L46.5429 7.02908Z" fill="white"/>
+                        <path d="M32.2729 6.73288C32.8406 6.73288 33.3672 6.78636 33.8526 6.89332C34.338 7.00028 34.7535 7.12781 35.0991 7.27591C35.4447 7.42401 35.6833 7.54742 35.8149 7.64615L34.8523 9.27522C34.6877 9.13535 34.3915 8.97492 33.9637 8.79391C33.5441 8.6129 33.071 8.5224 32.5444 8.5224C32.0178 8.5224 31.5736 8.61701 31.2115 8.80625C30.8495 8.99548 30.6685 9.27934 30.6685 9.65781C30.6685 10.0281 30.8577 10.3242 31.2362 10.5464C31.6229 10.7685 32.1454 10.9537 32.8036 11.1018C33.3466 11.2252 33.865 11.398 34.3586 11.6201C34.8523 11.834 35.2554 12.1426 35.5681 12.5457C35.889 12.9406 36.0494 13.4713 36.0494 14.1378C36.0494 14.7713 35.9136 15.302 35.6421 15.7298C35.3788 16.1494 35.025 16.4868 34.5808 16.7418C34.1365 16.9969 33.6428 17.1779 33.0998 17.2848C32.565 17.4 32.0261 17.4576 31.483 17.4576C30.8166 17.4576 30.2201 17.3918 29.6935 17.2602C29.1752 17.1285 28.7432 16.9763 28.3977 16.8035C28.0521 16.6225 27.8053 16.4703 27.6572 16.3469L28.6198 14.5203C28.8337 14.726 29.1834 14.9441 29.6689 15.1744C30.1543 15.3966 30.6973 15.5077 31.2979 15.5077C31.9397 15.5077 32.4539 15.3843 32.8406 15.1374C33.2273 14.8906 33.4207 14.5615 33.4207 14.1501C33.4207 13.8457 33.326 13.5989 33.1368 13.4096C32.9558 13.2204 32.7049 13.0682 32.384 12.953C32.0631 12.8378 31.7052 12.7349 31.3103 12.6444C30.94 12.5539 30.5657 12.4388 30.1872 12.2989C29.817 12.1508 29.4755 11.9615 29.1629 11.7312C28.8502 11.4926 28.5993 11.1964 28.41 10.8426C28.2208 10.4888 28.1262 10.0733 28.1262 9.5961C28.1262 8.98726 28.3195 8.46892 28.7062 8.04108C29.0929 7.61324 29.603 7.28825 30.2366 7.0661C30.8701 6.84396 31.5489 6.73288 32.2729 6.73288Z" fill="white"/>
+                        <path d="M21.2146 17.1614V15.2855C21.1487 15.483 20.9595 15.7545 20.6469 16.1001C20.3424 16.4456 19.9228 16.7583 19.388 17.038C18.8615 17.3177 18.2362 17.4576 17.5121 17.4576C16.5659 17.4576 15.7144 17.2314 14.9574 16.7788C14.2005 16.3263 13.604 15.6969 13.1679 14.8906C12.7319 14.0843 12.5138 13.1546 12.5138 12.1014C12.5138 11.0483 12.7319 10.1186 13.1679 9.31225C13.604 8.50594 14.2005 7.87653 14.9574 7.42401C15.7144 6.96326 16.5659 6.73288 17.5121 6.73288C18.2197 6.73288 18.8327 6.8563 19.351 7.10313C19.8693 7.34996 20.2848 7.63381 20.5975 7.95469C20.9184 8.27557 21.1158 8.55531 21.1899 8.79391V7.02908H23.8063V17.1614H21.2146ZM15.1179 12.1014C15.1179 12.7514 15.2619 13.3191 15.5498 13.8045C15.8378 14.29 16.2122 14.6643 16.6729 14.9276C17.1419 15.1909 17.6438 15.3225 18.1786 15.3225C18.7545 15.3225 19.2646 15.1868 19.7089 14.9153C20.1614 14.6438 20.5152 14.2694 20.7703 13.7922C21.0336 13.3068 21.1652 12.7432 21.1652 12.1014C21.1652 11.4597 21.0336 10.9002 20.7703 10.423C20.5152 9.93755 20.1614 9.55908 19.7089 9.28757C19.2646 9.00783 18.7545 8.86796 18.1786 8.86796C17.6438 8.86796 17.1419 9.00371 16.6729 9.27522C16.2122 9.53851 15.8378 9.91287 15.5498 10.3983C15.2619 10.8837 15.1179 11.4514 15.1179 12.1014Z" fill="white"/>
+                        <path d="M4.3945 3.19088H0.161377V0.870688H11.2317V3.19088H6.99855V17.1614H4.3945V3.19088Z" fill="white"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="menu-project-upgrade-containers">
+                <div class="menu-project-containers">
+                    <div class="menu-group-container">
+                        <div class="Home-container">
+                            <div class="Home-icon-container">
+                                <img src="../images/home.svg" alt="home-2">
+                            </div>
+                            <div class="Home-label-container">
+                                <h2>Home</h2>
+                            </div>
+                        </div>
+
+                        <div class="Messages-container">
+                            <div class="message-icon-container">
+                                <img src="../images/message.svg" alt="message-icon">
+                            </div>
+                            <div class="message-label-container">
+                                <h2>Messages</h2>
+                            </div>
+                        </div>
+
+                        <div class="Tasks-container">
+                            <div class="Task-icon-container">
+                                <img src="../images/note.svg" alt="note-icon">
+                            </div>
+                            <div class="Task-label-container">
+                                <h2>Tasks</h2>
+                            </div>
+                        </div>
+
+                        <div class="members-container">
+                            <div class="members-icon-container">
+                                <img src="../images/profile-2user.svg" alt="2-users">
+                            </div>
+                            <div class="members-label-container">
+                                <h2>Members</h2>
+                            </div>
+                        </div>
+
+                        <div class="Settings-container">
+                            <div class="Settings-icon-container">
+                                <img src="../images/setting-2.svg" alt="settings-icon">
+                            </div>
+                            <div class="Settings-label-container">
+                                <h2>Settings</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="my-projects-heading-container">
+                            <div class="my-projects-label-container">
+                                <h2>MY PROJECTS</h2>
+                            </div>
+                            <div class="my-projects-add-icon-container">
+                                <i class="fa-regular fa-square-plus"></i>
+                            </div>
+                        </div>
+                        <div class="my-projects-menu-lists-container">
+                            <div class="ecommerce-container">
+                                <div class="blackdot-icon-projects-menu">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <div class="ecommerce-project-item-label">
+                                    <h3>Ecommerce App</h3>
+                                </div>
+                            </div>
+                            <div class="website-redesign-container">
+                                <div class="yellowdot-icon-projects-menu">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <div class="website-redesign-project-item-label">
+                                    <h3>Website Redesign</h3>
+                                </div>
+                            </div>
+                            <div class="design-system-container">
+                                <div class="purpledot-icon-projects-menu">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <div class="design-system-project-item-label">
+                                    <h3>Design System</h3>
+                                </div>
+                            </div>
+                            <div class="wireframes-container">
+                                <div class="orangedot-icon-projects-menu">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <div class="wireframes-project-item-label">
+                                    <h3>Wireframe</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upgrade-container">
+                    <div class="bulb-container">
+                        <img src="../images/Bulb container.svg" alt="bulb">
+                    </div>
+                    <div class="upgrade-text-group-button-container">
+                        <div class="text-group-container">
+                            <div class="heading-unlock-container">
+                                <h1>Unlock Advance</h1>
+                            </div>
+                            <div class="text-body-unlock-container">
+                                <p>Upgrade now to unlock advanced features and elevate your productivity with exclusive tools and deeper insights.</p>
+                            </div>
+                        </div>
+                        <div class="upgrade-button-container">
+                            <button>Upgrade Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-menu-dashboard-container">
+            <div class="top-menu-dashboard-container">
+            <div class="search-profile-icons-container">
+                <div class="search-bar">
+                    <div class="search-icon-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search-text-container">
+                        <p>Search for anything...</p>
+                    </div>
+                </div>
+                <div class="icons-profile-container">
+                    <div class="icons-top-menu">
+                        <div class="calendar-icon-container">
+                            <img src="../images/calendar-2.svg" alt="calendar">
+                        </div>
+                        <div class="bell-icon-container">
+                            <img src="../images/notification.svg" alt="notification">
+                        </div>
+
+                    </div>
+                    <div class="profile-container">
+                        <div class="username-location-container">
+                            <div class="username">
+                                <h1>Matthew Wade</h1>
+                            </div>
+                            <div class="location">
+                                <p>California, India</p>
+                            </div>
+                        </div>
+                        <div class="profile-initials">
+                            <img src="../images/Profile Image.svg" alt="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="main-middle-dashboard-container">
+            <div class="page-details-container">
+                <div class="title-for-page-details-container">
+                    <div class="top-title">
+                        <div class="Project-ecommerce-label-container">
+                            <div class="project-label-container">
+                                <p>Project</p>
+                            </div>
+                            <div class="forward-slash-container">
+                                <p> / </p>
+                            </div>
+                            <div class="Ecommerce-App-label-top-container">
+                                <p>Ecommerce App</p>
+                            </div>
+                        </div>
+                        <div class="Profile-users-and-share-icon-container">
+                            <div class="profile-users">
+                                <div class="image1"><img src="../images/Ellipse 12.svg" alt="image1"></div>
+                                <div class="image2"><img src="../images/Ellipse 13.svg" alt="image2"></div>
+                                <div class="image3"><img src="../images/Ellipse 14.svg" alt="image3"></div>
+                                <div class="image4"><img src="../images/Ellipse 15.svg" alt="image4"></div>
+                                <div class="image5"><img src="../images/Frame 21.svg" alt=""></div>
+                            </div>
+                            <div class="Share-icon-label-container">
+                                <button><img src="../images/Group 615.svg" alt="2-users">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-title">
+                        <div class="Ecommerce-app-label-title-container">
+                            <h1>Ecommerce App</h1>
+                        </div>
+                        <div class="quick-options-container">
+                            <div class="left-quick-options-container">
+                                <div class="All-task-label-icon-container">
+                                    <div class="All-task-icon">
+                                        <img src="../images/task-square.svg" alt="alltask">
+                                    </div>
+                                    <div class="All-task-label">
+                                        <p>All Task</p>
+                                    </div>
+                                </div>
+                                <div class="vertical-line-container">
+                                    <p>|</p>
+                                </div>
+                                <div class="Sort-label-icon-container">
+                                    <div class="Sort-icon">
+                                        <img src="../images/arrow-3.svg" alt="up-down-arrow">
+                                    </div>
+                                    <div class="Sort-label">
+                                        <p>Sort</p>
+                                    </div>
+                                </div>
+                                <div class="vertical-line-container">
+                                    <p>|</p>
+                                </div>
+                                <div class="Filter-label-icon-container">
+                                    <div class="Filter-icon">
+                                        <img src="../images/setting-4.svg" alt="filter">
+                                    </div>
+                                    <div class="Filter-label">
+                                        <p>Filter</p>
+                                    </div>
+                                </div>
+                                <div class="vertical-line-container">
+                                    <p>|</p>
+                                </div>
+                                <div class="Customize-label-icon-container">
+                                    <div class="Customize-icon">
+                                        <img src="../images/setting.svg" alt="">
+                                    </div>
+                                    <div class="Customize-label">
+                                        <p>Customize</p>
+                                    </div>
+                                </div>
+                                <div class="vertical-line-container">
+                                    <p>|</p>
+                                </div>
+                                <div class="View-label-container">                               
+                                    <div class="View-label">
+                                        <p>View By</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="right-quick-options-container">
+                                <div class="first-icon-2dashes-container">
+                                    <img src="../images/Group 612.svg" alt="2-dashes">
+                                </div>
+                                <div class="second-icon-circle-container">
+                                    <img src="../images/Frame 22.svg" alt="circle-dots">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-cards-container">
+                    <div class="to-do-card-container">
+                        <div class="to-do-heading-container">
+                            <div class="to-do-text-container">
+                                <p>To Do</p>
+                            </div>
+                            <div class="cards-icons">
+                                <div class="plus-icon-container">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="three-dot-icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="to-do-body-container">
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="low-button-container">
+                                        <button>Low</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>Research</h1>
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Conduct interviews with target users to gather insights</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                        <div class="image3mini"><img src="../images/Ellipse 14.svg" alt="image3mini"></div>
+                                        <div class="image4mini"><img src="../images/Ellipse 15.svg" alt="image4mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>12 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>0 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="High-button-container">
+                                        <button>High</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>Wireframe Home Page</h1>
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Design wireframes for the onboarding pages layout.</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>14 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>15 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="low-button-container">
+                                        <button>Low</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>Competitor Analysis</h1>
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Analyze the UX design of competitor Application.</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                        <div class="image3mini"><img src="../images/Ellipse 14.svg" alt="image3mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>12 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>0 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="In-progress-card-container">
+                        <div class="In-progress-heading-container">
+                            <div class="In-progress-text-container">
+                                <p>In Progress</p>
+                            </div>
+                            <div class="cards-icons">
+                                <div class="plus-icon-container">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="three-dot-icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="In-progress-body-container">
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="High-button-container">
+                                        <button>High</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>FoodWebsite</h1>
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Design wireframes for the onboarding pages layout.</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                        <div class="image3mini"><img src="../images/Ellipse 14.svg" alt="image3mini"></div>
+                                        <div class="image4mini"><img src="../images/Ellipse 15.svg" alt="image4mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>14 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>15 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="low-button-container">
+                                        <button>Low</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>Website Illustrations</h1>
+                                    </div>
+                                    <div class="illustration-container">
+                                        <img src="../images/Illustration Image.svg" alt="illustration1">
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Design website illustration for the onboarding
+                                            pages layout. Converted into multiple format
+                                            for better visuals.</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>14 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>15 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="Done-card-container">
+                        <div class="Done-heading-container">
+                            <div class="In-progress-text-container">
+                                <p>Done</p>
+                            </div>
+                            <div class="cards-icons">
+                                <div class="plus-icon-container">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="three-dot-icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Done-body-container">
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="High-button-container">
+                                        <button>High</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>Wireframe</h1>
+                                    </div>
+                                    <div class="illustration-container">
+                                        <img src="../images/Wireframe Image.svg" alt="wireframe1">
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Design wireframes for the onboarding pages layout.</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>14 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>15 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-container">
+                                <div class="button-3dots">
+                                    <div class="low-button-container">
+                                        <button>Low</button>
+                                    </div>
+                                    <div class="threedots-icon-container">
+                                        <i class="fa-solid fa-ellipsis"></i>
+
+                                    </div>
+                                </div>
+                                <div class="mid-section-heading-paragraph">
+                                    <div class="mid-section-heading">
+                                        <h1>Music App Research</h1>
+                                    </div>
+                                    <div class="mid-section-paragraph">
+                                        <p>Conduct interviews with target users to gather insights.</p>
+                                    </div>
+                                </div>
+                                <div class="reactions-section-container">
+                                    <div class="profile-pictures-card-container">
+                                        <div class="image1mini"><img src="../images/Ellipse 12.svg" alt="image1mini"></div>
+                                        <div class="image2mini"><img src="../images/Ellipse 13.svg" alt="image2mini"></div>
+                                        <div class="image3mini"><img src="../images/Ellipse 14.svg" alt="image3mini"></div>
+                                    </div>
+                                    <div class="comments-files-container">
+                                        <div class="comments-and-icons-container">
+                                            <div class="comment-icon-container">
+                                                <img src="../images/comment_icon.svg" alt="comment-icon">
+                                            </div>
+                                            <div class="comment-label-container">
+                                                <p>14 comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="files-and-icons-container">
+                                            <div class="files-icon-container">
+                                                <img src="../images/file_icon.svg" alt="file-icon">
+                                            </div>
+                                            <div class="files-label-container">
+                                                <p>15 files</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

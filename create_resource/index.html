@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create resource</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="whole_page_container">
+        <div class="overlay" id="overlay"></div> 
+        <div class="resource-page">
+            <div class="welcome_and_button_container">
+            <div class="welcome_container">
+                <h1>Welcome</h1>
+            </div>
+            <div class="create_resource_container">
+                <button id="createResourceButton">Create A Resource</button>
+            </div>
+            </div>
+            <div class="resource_entered_container" id="resource_entered_container">
+            <div class="first_resource_container" id="first_resource_container">
+                <div class="heading_section">
+                    <div class="heading">
+                        <h4 id="web_heading" class="web_heading">gtd</h4>
+                    </div>
+                    <div class="delete_icon" id="delete_icon">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="text_section">
+                    <p id="text_web_description" class="text_web_description"></p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="form_container" id="formContainer">
+                <form action="submit" id="form">
+                    <div class="cancel_icon" id="cancel-icon">
+                        <i class="fa-solid fa-x" id="cancel-icon"></i>
+                    </div>
+                    <div class="form-inputs" id="form-inputs">
+                        <div class="heading">
+                            <h1>Create Resource</h1>
+                        </div>
+                        <div class="input_group">
+                            <label for="website_name">Name of Website</label>
+                            <input type="text" id="webname" placeholder="eg. Data Analysis, Website For NASA">
+                            <p class="webname-alert" id="webname-alert"></p>
+                        </div>
+                        <div class="input_group">
+                            <label for="website_link">Link Of Website</label>
+                            <input type="text" name="email" id="email" placeholder="www.link.com">
+                            <p class="email-alert" id="email-alert"></p>
+                        </div>
+                        <div class="input_group">
+                            <label for="description">Description Of Website</label>
+                            <textarea name="description" id="web_description" class="web_description" placeholder="Enter Description"></textarea>
+                            <p class="web_description_alert" id="web_description_alert"></p>
+                
+                        </div>
+                        <div class="create_button">
+                            <button id="createbuttonForm" type="submit">Create</button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./index.js"></script>
+</body>
+</html>
